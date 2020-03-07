@@ -19,8 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::apiResource('privadas', 'privadaController');
 Route::apiResource('usuario','controllerUsuario');
-Route::apiResource('administrador', 'controllerAdministrador');
 Route::apiResource('evento','controllerEvento');
 Route::apiResource('casa', 'controllerCasas');
-Route::apiresource('reporte','reporteController');
-Route::apiresource('zona','zonaController');
+Route::apiResource('reporte','reporteController');
+Route::apiResource('zona','zonaController');

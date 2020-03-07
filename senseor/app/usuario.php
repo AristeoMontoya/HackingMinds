@@ -15,6 +15,6 @@ class usuario extends Model
     public $timestamps = true;
 
     public $fillable = [
-        'clave_usuario','Nombre_usuarios','Casa','telefono'
+        'clave_usuario','Nombre_usuarios','Casa','telefono','rol_id'
     ];
 }

@@ -27,6 +27,7 @@ class controllerUsuario extends Controller
         $usuario->nombre_usuarios = $request->nombre_zonas;
         $usaurio->casa= $request->casa;
         $usuario->telefono = $request->telefono;
+        $usuario->rol_id = $request->rol_id;
         $usuario->save();
         return response()->json(['mensaje'=>'Actualizado con exito!']);
     }

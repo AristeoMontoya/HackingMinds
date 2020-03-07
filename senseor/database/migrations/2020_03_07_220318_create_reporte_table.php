@@ -19,7 +19,7 @@ class CreateReporteTable extends Migration
             $table->longText('Contenido');
             $table->char('Tipo', 1);
             $table->bigInteger('usuario_id')->unsigned();
-            $table->foreign('usuario_id')->references('clave_admin')->on('administrador');
+            $table->foreign('usuario_id')->references('clave_usuario')->on('usuarios');
             $table->timestamps();
         });
     }
