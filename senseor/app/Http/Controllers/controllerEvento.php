@@ -36,8 +36,9 @@ class controllerEvento extends Controller
     $evento = evento::find($id);
     $evento->delete();
     }
-    public function show()
+    public function show($id)
     {
-        
+        $evento = evento::find($id);
+        return response()->json($evento, 200);
     }
 }

@@ -28,12 +28,14 @@ class controllerCasas extends Controller
         $casa->numero_de_casa = $request->numero_de_casa;
         $casa->save();
     }
-    public function destroy()
+    public function destroy($id)
     {
-
+        $casa = casa::find($id);
+        $casa->delete();
     }
-    public function show()
+    public function show($id)
     {
-        
+        $casa = casa::find($id);
+        return response()->json($casa, 200);
     }
 }

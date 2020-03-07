@@ -29,12 +29,14 @@ class reporteController extends Controller
         $reporte->save();
 
     }
-    public function destroy()
+    public function destroy($id)
     {
-
+        $reporte = reporte::find($id);
+        $reporte->delete();
     }
-    public function show()
+    public function show($id)
     {
-        
+        $reporte = reporte::find($id);
+        return response()->json($reporte, 200);
     }
 }

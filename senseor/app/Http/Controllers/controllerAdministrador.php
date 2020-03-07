@@ -35,8 +35,9 @@ class controllerAdministrador extends Controller
      return redirect()->route('administrador.index');
 
     }
-    public function show()
+    public function show($id)
     {
-        
+        $administrador = administrador::find($id);
+        return response()->json($administrador, 200);
     }
 }
