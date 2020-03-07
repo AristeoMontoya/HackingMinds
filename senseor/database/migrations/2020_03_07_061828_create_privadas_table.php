@@ -14,7 +14,10 @@ class CreatePrivadasTable extends Migration
     public function up()
     {
         Schema::create('privadas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('clave_privada')->unsigned();
+            $table->char('nombre_privada',100);
+            $table->char('Dirección',50);
+            $table->char('Telefono',30);
             $table->timestamps();
         });
     }

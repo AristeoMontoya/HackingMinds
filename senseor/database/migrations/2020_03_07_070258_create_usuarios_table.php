@@ -14,8 +14,13 @@ class CreateUsuariosTable extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('clave_usuario')->unsigned();
+            $table->char('Nombre_usuarios',100);
+            $table->bigIncrements('Casa')->unsigned();
+            $table->char('telefono',20);
+            $table->foreign('Casa')->references('clave_casa')->on('casas');
             $table->timestamps();
+        
         });
     }
 

@@ -14,10 +14,10 @@ class CreateAdministradorTable extends Migration
     public function up()
     {
         Schema::create('administrador', function (Blueprint $table) {
-            $table->id();
-            $table->integer('idPrivada');
+            $table->bigncrements('clave_admin')->unsigned();
+            $table->integer('Privada')->unsigned();
             $table->string('nombre');
-            $table->foreign('idPrivada')->references('id')->on('privada');
+            $table->foreign('Privada')->references('clave_privada')->on('privadas');
             $table->timestamps();
         });
     }
