@@ -19,7 +19,7 @@ class CreateEventosTable extends Migration
             $table->bigInteger('Zona')->unsigned();
             $table->integer('numero_Invitados');
             $table->foreign('Zona')->references('clave_zona')->on('zonas');
-             $table->dateTime('Fecha_evento', 0);
+            $table->dateTime('Fecha_evento', 0);
             $table->timestamps();
         });
     }
