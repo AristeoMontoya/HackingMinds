@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Zona;
+use App\zona;
 class zonaController extends Controller
 {
     public function index()
     {
-        $zona = Zona::all();
+        $zona = zona::all();
 
         return response()->json($zona,200);
     }
@@ -16,7 +16,7 @@ class zonaController extends Controller
     public function store(Request $request)
     {
         //dd($request);
-        Zona::create($request->all());
+        zona::create($request->all());
 
         return response()->json(['Mensaje' => 'Registrado con éxito!']);
     }
