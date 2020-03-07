@@ -17,8 +17,11 @@ class CreateAdministradorTable extends Migration
             $table->bigIncrements('clave_admin')->unsigned();
             $table->bigInteger('Privada')->unsigned();
             $table->string('nombre');
+            $table->bigInteger('rol_id')->unsigned()->index();
             $table->foreign('Privada')->references('clave_privada')->on('privadas');
+            $table->foreign('rol_id')->references('id')->on('roles');
             $table->timestamps();
+
         });
     }
 	
