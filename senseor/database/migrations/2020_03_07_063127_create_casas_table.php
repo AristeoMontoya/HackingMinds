@@ -17,7 +17,7 @@ class CreateCasasTable extends Migration
             $table->bigIncrements('clave_casa')->unsigned();
             $table->char('Nombre_casas',100);
             $table->BigInteger('privadas')->unsigned();
-            $table->integer('Numero de casa');
+            $table->integer('Numero_de_casa');
             $table->foreign('privadas')->references('clave_privada')->on('privadas');
             $table->timestamps();
         });

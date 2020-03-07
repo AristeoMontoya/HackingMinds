@@ -21,3 +21,4 @@ Route::apiResource('privadas', 'privadaController');
 Route::apiResource('usuario','controllerUsuario');
 Route::apiResource('administrador', 'controllerAdministrador');
 Route::apiResource('evento','controllerEvento');
+Route::apiResource('casa', 'controllerCasas');
