@@ -29,8 +29,10 @@ class controllerAdministrador extends Controller
         $administrador->limite_de_invitados = $request->limite_de_invitados;
         $administrador->save();
     }
-    public function destroy()
-    {
+    public function destroy(administrador $admisnistrador)
+    { 
+     $administrador->delete();
+     return redirect()->route('administrador.index');
 
     }
     public function show()

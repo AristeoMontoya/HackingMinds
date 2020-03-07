@@ -23,3 +23,4 @@ Route::apiResource('administrador', 'controllerAdministrador');
 Route::apiResource('evento','controllerEvento');
 Route::apiResource('casa', 'controllerCasas');
 Route::apiresource('reporte','reporteController');
+Route::apiresource('zona','zonaController');

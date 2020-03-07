@@ -22,6 +22,11 @@ class reporteController extends Controller
     }
     public function update($id,Request $request)
     {
+        $reporte = reporte::findOrFail($id);
+        $reporte->contenido = $request->contenido;
+        $reporte->tipo= $request->tipo;
+        $reporte->usaurio_id = $request->usuario_id;
+        $reporte->save();
 
     }
     public function destroy()

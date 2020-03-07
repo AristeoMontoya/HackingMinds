@@ -23,7 +23,11 @@ class controllerUsuario extends Controller
     }
     public function update($id,Request $request)
     {
-        
+        $usuario = usuario::findOrFail($id);
+        $usuario->nombre_usuarios = $request->nombre_zonas;
+        $usaurio->casa= $request->casa;
+        $usuario->telefono = $request->telefono;
+        $usuario->save();
     }
     public function destroy()
     {

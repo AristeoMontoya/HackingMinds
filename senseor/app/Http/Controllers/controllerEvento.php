@@ -32,8 +32,8 @@ class controllerEvento extends Controller
     }
     public function destroy($id)
     {
-    $user = User::find($id);
-    $user->delete();
+    $evento = evento::find($id);
+    $evento->delete();
     }
     public function show()
     {
