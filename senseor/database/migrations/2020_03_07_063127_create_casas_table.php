@@ -16,7 +16,7 @@ class CreateCasasTable extends Migration
         Schema::create('casas', function (Blueprint $table) {
             $table->bigIncrements('clave_casa')->unsigned();
             $table->char('Nombre_casas',100);
-            $table->bigIncrements('privadas')->unsigned();
+            $table->BigInteger('privadas')->unsigned();
             $table->integer('Numero de casa');
             $table->foreign('privadas')->references('clave_privada')->on('privadas');
             $table->timestamps();

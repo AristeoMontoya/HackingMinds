@@ -16,7 +16,7 @@ class CreateZonasTable extends Migration
         Schema::create('zonas', function (Blueprint $table) {
             $table->bigIncrements('clave_zona')->unsigned();
             $table->char('Nombre_zonas',100);
-            $table->bigIncrements('privadas')->unsigned();
+            $table->bigInteger('privadas')->unsigned();
             $table->integer('limite de invitados');
             $table->foreign('privadas')->references('clave_privada')->on('privadas');
             $table->timestamps();

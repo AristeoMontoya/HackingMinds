@@ -16,7 +16,7 @@ class CreateUsuariosTable extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->bigIncrements('clave_usuario')->unsigned();
             $table->char('Nombre_usuarios',100);
-            $table->bigIncrements('Casa')->unsigned();
+            $table->bigInteger('Casa')->unsigned();
             $table->char('telefono',20);
             $table->foreign('Casa')->references('clave_casa')->on('casas');
             $table->timestamps();

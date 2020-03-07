@@ -14,8 +14,8 @@ class CreateAdministradorTable extends Migration
     public function up()
     {
         Schema::create('administrador', function (Blueprint $table) {
-            $table->bigncrements('clave_admin')->unsigned();
-            $table->integer('Privada')->unsigned();
+            $table->bigIncrements('clave_admin')->unsigned();
+            $table->bigInteger('Privada')->unsigned();
             $table->string('nombre');
             $table->foreign('Privada')->references('clave_privada')->on('privadas');
             $table->timestamps();
