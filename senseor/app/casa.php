@@ -15,6 +15,8 @@ class casa extends Model
     public $timestamps = true;
 
     public $fillable = [
+
         'clave_casa','Nombre_casas','privadas','Numero_de_casa'
+
     ];
 }

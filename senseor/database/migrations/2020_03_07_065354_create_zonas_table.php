@@ -17,7 +17,7 @@ class CreateZonasTable extends Migration
             $table->bigIncrements('clave_zona')->unsigned();
             $table->char('Nombre_zonas',100);
             $table->bigInteger('privadas')->unsigned();
-            $table->integer('limite de invitados');
+            $table->integer('limite_de_invitados');
             $table->foreign('privadas')->references('clave_privada')->on('privadas');
             $table->timestamps();
         });

@@ -3,21 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\evento;
-class controllerEvento extends Controller
+use App\Zona;
+class zonaController extends Controller
 {
-    //
     public function index()
     {
-        $evento = evento::all();
+        $zona = Zona::all();
 
-        return response()->json($evento,200);
+        return response()->json($zona,200);
     }
 
     public function store(Request $request)
     {
         //dd($request);
-        evento::create($request->all());
+        Zona::create($request->all());
 
         return response()->json(['Mensaje' => 'Registrado con éxito!']);
     }
@@ -25,11 +24,9 @@ class controllerEvento extends Controller
     {
 
     }
-    public function destroy($id)
+    public function destroy()
     {
-     user::destroy($id);
 
-     dd("Eliminando: ",$id);
     }
     public function show()
     {
