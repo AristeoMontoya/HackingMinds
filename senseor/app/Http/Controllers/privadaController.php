@@ -28,14 +28,17 @@ class privadaController extends Controller
         $privada->dirección = $request->dirección;
         $privada->telefono = $request->telefono;
         $privada->save();
+        return response()->json(['mensaje'=>'Actualiado con exito!']);
     }
-    public function destroy()
+    public function destroy($id)
     {
-
+        $privada = evento::find($id);
+        $privada->delete();
 
     }
-    public function show()
+    public function show($id)
     {
-        
+        $privada = privada::find($id);
+        return response()->json($privada,200);
     }
 }

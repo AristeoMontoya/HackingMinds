@@ -27,8 +27,9 @@ class controllerEvento extends Controller
         $evento->nombre_evento = $request->nombre_evento;
         $evento->zona= $request->zona;
         $evento->numero_invitados = $request->numero_invitados;
-        $evento->fecha_evento = $request->fecha_evento
+        $evento->fecha_evento = $request->fecha_evento;
         $evento->save();
+        return response()->json(['Mensaje'=>'']);
     }
     public function destroy($id)
     {
