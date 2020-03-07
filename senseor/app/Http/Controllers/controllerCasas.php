@@ -22,7 +22,11 @@ class controllerCasas extends Controller
     }
     public function update($id,Request $request)
     {
-
+        $casa = casa::findOrFail($id);
+        $casa->nombre_casas = $request->nombre_casas;
+        $casa->privadas= $request->privadas;
+        $casa->numero_de_casa = $request->numero_de_casa;
+        $casa->save();
     }
     public function destroy()
     {

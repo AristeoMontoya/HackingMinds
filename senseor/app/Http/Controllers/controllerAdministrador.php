@@ -23,7 +23,11 @@ class controllerAdministrador extends Controller
     }
     public function update($id,Request $request)
     {
-
+        $administrador = administrador::findOrFail($id);
+        $administrador->privada = $request->privada;
+        $administrador->nombre= $request->nombre;
+        $administrador->limite_de_invitados = $request->limite_de_invitados;
+        $administrador->save();
     }
     public function destroy()
     {

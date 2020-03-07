@@ -21,11 +21,17 @@ class privadaController extends Controller
         return response()->json(['Mensaje' => 'Registrado con éxito!']);
     }
     public function update($id,Request $request)
-    {
+    {  
+        $privada = privada::findOrFail($id);
 
+        $privada->nombre_privada = $request->nombre_privada;
+        $privada->dirección = $request->dirección;
+        $privada->telefono = $request->telefono;
+        $privada->save();
     }
     public function destroy()
     {
+
 
     }
     public function show()

@@ -22,6 +22,11 @@ class zonaController extends Controller
     }
     public function update($id,Request $request)
     {
+        $zona = zona::findOrFail($id);
+        $zona->nombre_zonas = $request->nombre_zonas;
+        $zona->privadas= $request->privadas;
+        $zona->limite_de_invitados = $request->limite_de_invitados;
+        $zona->save();
 
     }
     public function destroy()

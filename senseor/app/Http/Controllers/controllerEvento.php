@@ -23,13 +23,17 @@ class controllerEvento extends Controller
     }
     public function update($id,Request $request)
     {
-
+        $evento= zona::findOrFail($id);
+        $evento->nombre_evento = $request->nombre_evento;
+        $evento->zona= $request->zona;
+        $evento->numero_invitados = $request->numero_invitados;
+        $evento->fecha_evento = $request->fecha_evento
+        $evento->save();
     }
     public function destroy($id)
     {
-     user::destroy($id);
-
-     dd("Eliminando: ",$id);
+    $user = User::find($id);
+    $user->delete();
     }
     public function show()
     {
