@@ -32,7 +32,7 @@ class privadaController extends Controller
     }
     public function destroy($id)
     {
-        $privada = evento::find($id);
+        $privada = privada::find($id);
         $privada->delete();
 
     }

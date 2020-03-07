@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class zona extends Model
 {
-    protected $table = 'Zonas';
+    protected $table = 'zonas';
 
     protected $primaryKey = 'clave_zona';
 
