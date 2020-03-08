@@ -1,0 +1,28 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-admin card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Quitar o agregar permisos a un usuario</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form onsubmit="return checkForm(this);" method="POST">
+                        <label class="label mb-0" for="usuario">Usuario</label><br />
+                        <select class="caja" name="usuario">
+                            <option value="usuario1"selected>Usuario 1</option> 
+                            <option value="usuario2">Usuario 2</option>
+                            <option value="usuario3">Usuario te</option>
+                        </select> <br />
+                        <label class="label mb-0" for="permiso">Permiso</label><br />
+                        <select class="caja" name="permiso">
+                            <option value="permiso1"selected>permiso 1</option> 
+                            <option value="permiso2">permiso 2</option>
+                            <option value="permiso3">permiso te</option>
+                        </select> <br />
+                        <input class="btn btn-success" type="submit" value="Agregar permiso" name="permiso_agregar" id="permiso_agregar" onclick="Clicked(this);">
+                        <input class="btn btn-danger" type="submit" value="Quitar permiso" name="permiso_quitar" id="permiso_quitar" onclick="Clicked(this);">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

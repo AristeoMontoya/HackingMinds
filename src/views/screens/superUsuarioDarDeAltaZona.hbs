@@ -1,0 +1,26 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-super card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Dar de alta zona</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form action="http://192.168.43.217:8000/zona" method="POST">
+                        <label class="label mb-0" for="privadas">Privada la zona</label><br />
+                        <input class="caja"  type="text" name="privadas" id="privadas" placeholder="Privada" autofocus><br />
+<!--                        <select class="caja" name="privada">
+                            <option value="privada1"selected>Privada 1</option> 
+                            <option value="privada2">Privada 2</option>
+                            <option value="privada3">Prian</option>
+                        </select> <br />-->
+                        <label class="label mb-0" for="nombre_zonas">Nombre de zona</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="nombre_zonas" name="nombre_zonas" value="" placeholder="Nombre de zona"><br />
+                        <label class="label mb-0" for="limite_de_invitados">Límite de personas</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="limite_de_invitados" name="limite_de_invitados" value="" placeholder="Límite" autofocus><br />
+                        <input class="btn btn-success" type="submit" value="Dar de alta zona">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

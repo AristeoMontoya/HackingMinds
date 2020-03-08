@@ -1,0 +1,20 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-super card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Configurar equipos</h1>
+                <div class="col">
+                    <form action="/super/configurarequipos" method="POST">
+                        <label class="label mb-0" for="equipo">Equipo a configurar</label><br />
+                        <select class="caja" name="equipo" autofocus>
+                            <option value="equipo1"selected>equipo1</option> 
+                            <option value="equipo2">equipo2</option>
+                            <option value="equipo3">equipo3</option>
+                        </select> <br />
+                        <textarea style="width: 70%" class="caja" name="conf" id="conf" cols="30" rows="10" placeholder="Configure el equipo con su magia de sirena."></textarea><br />
+                        <input class="btn btn-success" type="submit" value="Actualizar equipo">
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>

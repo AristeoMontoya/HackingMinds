@@ -1,0 +1,20 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-admin card text-center p-3 text-dark">
+            <form action="/admin/generarReporte" method="POST">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Generar reporte</h1>
+                <div class="col">
+                    <label class="label mb-0" for="tipo">Tipo de reporte</label><br />
+                    <select class="caja" name="tipo" autofocus>
+                        <option value="tipo1"selected>Accesos</option> 
+                        <option value="tipo2">Eventos</option>
+                        <option value="tipo3">Usuarios registrados</option>
+                    </select> <br />
+                    <textarea style="width: 70%" class="caja" name="reporte" id="reporte" cols="30" rows="10" placeholder="Escriba aquí su reporte"></textarea><br />
+                    <input class="btn btn-success" type="submit" value="Generar reporte">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
