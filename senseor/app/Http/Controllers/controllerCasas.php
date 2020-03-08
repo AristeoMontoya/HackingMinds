@@ -18,7 +18,7 @@ class controllerCasas extends Controller
         //dd($request);
         casa::create($request->all());
 
-        return response()->json(['Mensaje' => 'Registrado con éxito!']);
+        return response()->json(['Mensaje' => 'Registrado con exito!']);
     }
     public function update($id,Request $request)
     {

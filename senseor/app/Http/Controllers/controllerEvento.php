@@ -19,7 +19,7 @@ class controllerEvento extends Controller
         //dd($request);
         evento::create($request->all());
 
-        return response()->json(['Mensaje' => 'Registrado con éxito!']);
+        return response()->json(['Mensaje' => 'Registrado con exito!']);
     }
     public function update($id,Request $request)
     {
