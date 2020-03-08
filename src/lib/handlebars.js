@@ -1,4 +1,4 @@
-const timeago = require('Timeago.js');
+/*const timeago = require('Timeago.js');
 
 
 const helpers = {
@@ -19,4 +19,4 @@ helpers.tiempoago = (timestamp) => {
     return format(timestamp);
 }
 
-module.exports = helpers;
+module.exports = helpers;/**/
