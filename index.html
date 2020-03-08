@@ -1,0 +1,43 @@
+PrivadaCrear modelo:
+Meterle el cagadero al modelo de::
+id 				int(2) 		PK
+Dirección		null
+Teléfono 		int 
+Nombre 			nvarchar(50)
+
+Zona:
+IdZona 			int(2) 		PK
+IdPrivada 		int(4) 		FK
+LimiteInvitados int(3)
+
+Casa:
+Teléfono 		int(10)
+Número 			int(4)
+IDPrivada 		int(2)		FK
+
+Usuario:
+ID 				int(5) 		PK
+Nombre 			nvarchar(50)
+IDCasa 			int(4) 		FK
+
+Evento:
+ID 				int(3) 		PK
+CodigoEvento 	varchar(50) 		
+Fecha 			datetime
+Invitados 		int(3)
+IdZona 			int(2) 		FK
+
+Administrador:
+id 				int(2) 		pk
+idPrivada 		int 		FK
+Nombre 			varchar(50)
+(50)
+
+Evento.
+TECNOLOGICO2019
+
+Crear modelo:
+Meterle el cagadero al modelo de:
+Admin
+Evento
+Usuario
