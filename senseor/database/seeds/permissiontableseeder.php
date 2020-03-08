@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\permisos;
+use App\roles;
 class permissiontableseeder extends Seeder
 {
     /**
@@ -39,6 +40,6 @@ foreach (Route::getRoutes()->getRoutes() as $key => $route)
 // find admin role.
 $admin_role = roles::where('nombre','administrador')->first();
 // atache all permissions to admin role
-$admin_role->permiso()->attach($permission_ids);
+//$admin_role->permissions()->attach($permission_ids);
     }
 }
