@@ -1,0 +1,65 @@
+body {
+    background: #420069;
+}
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 1.2em;
+}
+.tarjeta {
+    background: #FFFFFF;
+    border-radius: .6em;
+    max-width: 50em;
+    margin: auto auto auto auto;
+}
+.tarjeta-media {
+    background: #FFFFFF;
+    border-radius: .6em;
+    margin: auto auto auto auto;
+    float: left;
+    padding: .5em;
+}
+.tarjeta-super {
+    background: #FFFFCC;
+}
+.tarjeta-admin {
+    background: #CCCCEE;
+}
+.tarjeta-usuario {
+    background: #DDEEDD;
+}
+.btn {
+    margin-bottom: .25em;
+}
+.btn-success {
+    background: #888888;
+    border-radius: .6em;
+}
+.btn-danger {
+    background: #DD9999;
+    border-radius: .6em;
+}
+.btn-primary {
+    background: #888888;
+    border-radius: .6em;
+}
+.label {
+    font-size: 1.5em;
+}
+
+.caja {
+    font-size: 1.2em;
+    border-radius: .3em;
+    margin-bottom: 1em;
+    width: 45%;
+}
+
+select {
+    width: 11em;
+    width: 45%;
+}
+
+.imagen {
+    max-width: 30em;
+}

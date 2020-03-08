@@ -1,0 +1,23 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-usuario card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Otorgar acceso</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form action="/usuario/otorgarAcceso" method="POST">
+                        <label class="label mb-0" for="invitados">Ni idea de que habla</label class="label m-0"><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="invitados" name="invitados" value="" placeholder="Oh rayos"><br />
+                        <label class="label mb-0" for="zona">y ahora?</label><br />
+                        <select class="caja" name="zona">
+                            <option value="zona1"selected>no se :'B</option> 
+                            <option value="zona2">Zona2</option>
+                            <option value="zona3">Zona3</option>
+                        </select> <br />
+                        <input class="btn btn-success" type="submit" value="Otorgar acceso">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-admin card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Dar de alta a una casa</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form action="/admin/altaDeCasa" method="POST">
+                        <label class="label mb-0" for="telefono">Teléfono</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="telefono" name="telefono" value="" placeholder="Teléfono" autofocus><br />
+                        <label class="label mb-0" for="numero">Número de casa</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="numero" name="numero" value="" placeholder="Número de casa" ><br />
+                        <label class="label mb-0" for="privada">Privada la zona</label><br />
+                        <select class="caja" name="privada">
+                            <option value="privada1"selected>Privada1</option> 
+                            <option value="privada2">Privada1</option>
+                            <option value="privada3">Privada1</option>
+                        </select> <br />
+                        <input class="btn btn-success" type="submit" value="Dar de alta casa">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

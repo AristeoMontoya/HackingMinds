@@ -1,0 +1,33 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-super card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Dar de alta administrador</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form action="/super/altaDeAdministrador" method="POST">
+                        <label class="label mb-0" for="privada">Privada la zona</label><br />
+                        <select class="caja" name="privada">
+                            <option value="privada1"selected>Privada 1</option> 
+                            <option value="privada2">Privada 2</option>
+                            <option value="privada3">Prian</option>
+                        </select> <br />
+                        <label class="label mb-0" for="nombre">Nombre</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="nombre" name="nombre" value="" placeholder="Nombre" autofocus><br />
+                        <div class="tarjeta row" style="background: none; text-align: center;">
+                            <div class="col" style="float: left;">
+                                <label class="label mb-0" for="apa">Apellido paterno</label><br />
+                                <input class="caja" style="font-style:italic;" type="text" id="apa" name="apa" value="" placeholder="A. paterno"><br />
+                            </div>
+                            <div class="col" style="float: bottom;">
+                                <label class="label mb-0" for="ama">Apellido materno</label><br />
+                                <input class="caja" style="font-style:italic;" type="text" id="ama" name="ama" value="" placeholder="A. materno"><br />
+                            </div>
+                        </div> <br />
+                        <input class="btn btn-success" type="submit" value="Dar de alta administrador">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

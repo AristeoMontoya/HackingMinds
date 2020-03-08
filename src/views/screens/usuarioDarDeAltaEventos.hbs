@@ -1,0 +1,29 @@
+<!-- CONTENIDO -->
+<div class="row text-center">
+    <div class="col p-3">
+        <div class="tarjeta tarjeta-usuario card text-center p-3 text-dark">
+            <h1  class="mb-3 text-dark" style="text-decoration: underline;">Dar de alta evento</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <form action="/usuario/altadeEventos" method="POST">
+                        <label class="label mb-0" for="nombre">Nombre</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="nombre" name="nombre" value="" placeholder="Nombre" autofocus><br />
+                        <label class="label mb-0" for="codigo">Código de evento</label><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="codigo" name="codigo" value="" placeholder="Código de evento"><br />
+                        <label class="label mb-0" for="fecha">Fecha</label class="label m-0"><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="fecha" name="fecha" value="" placeholder="Fecha"><br />
+                        <label class="label mb-0" for="invitados">Invitados</label class="label m-0"><br />
+                        <input class="caja" style="font-style:italic;" type="text" id="invitados" name="invitados" value="" placeholder="No. de invitados"><br />
+                        <label class="label mb-0" for="zona">Zona</label><br />
+                        <select class="caja" name="zona">
+                            <option value="zona1"selected>Zona1</option> 
+                            <option value="zona2">Zona2</option>
+                            <option value="zona3">Zona3</option>
+                        </select> <br />
+                        <input class="btn btn-success" type="submit" value="Dar de alta evento">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
