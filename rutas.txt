@@ -1,0 +1,13 @@
+192.168.13.194:6969/
+192.168.13.194:6969/cambiarCodigo
+192.168.13.194:6969/admin/altaDeUsuario
+192.168.13.194:6969/admin/altaDeCasa
+192.168.13.194:6969/admin/permisosDeUsuarios
+192.168.13.194:6969/admin/generarReporte
+192.168.13.194:6969/super/altaDePrivada
+192.168.13.194:6969/super/altaDeZona
+192.168.13.194:6969/super/altaDeAdministrador
+192.168.13.194:6969/super/otorgarDenegarPermisos
+192.168.13.194:6969/super/configurarEquipos
+192.168.13.194:6969/usuario/otorgarAcceso
+192.168.13.194:6969/usuario/altaDeEventos
