@@ -22,7 +22,7 @@ router.post('/altaDeUsuario', async (req, res) => {
 });
 router.post('/altaDeCasa', async (req, res) => {
     axios.post('192.168.43.217:8000/zona', {
-        nombre_zonas: 'Buy the milk',
+        nombre_zonas: req.body.com,
         privadas: "1",
         limite_de_invitados: "15"
       })
@@ -33,7 +33,7 @@ router.post('/altaDeCasa', async (req, res) => {
       .catch((error) => {
         console.error(error);
       });
-    res.send('que bonita tu casita 8]');
+      res.render('screens/adminDarDeAltaCasa');
 });
 router.post('/permisosDeUsuarios', async (req, res) => {
     res.send('usuario permisideichon 8]');
